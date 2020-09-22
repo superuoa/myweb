@@ -32,14 +32,13 @@
 	<distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://nexus:8081/repository/maven-releases/</url>
+            <url>http://nexus-cicd-demo.apps.marvel.yipintsoigroup.com:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://nexus:8081/repository/maven-snapshots/</url>
+            <url>http://nexus-cicd-demo.apps.marvel.yipintsoigroup.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-    
     
 	<dependencies>
 		<dependency>
