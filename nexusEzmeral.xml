@@ -1,44 +1,19 @@
+<?xml version="1.0"?>
 <settings>
-      <servers>
-         <server>
-            <id>nexus</id>
-            <username>deployment</username>
-            <password>deployment123</password>
-         </server>
-      </servers>
-      <mirrors>
-        <mirror>
-          <!--This sends everything else to /public -->
-          <id>nexus</id>
-          <mirrorOf>*</mirrorOf>
-          <url>http://nexus-cicd-demo.apps.marvel.yipintsoigroup.com/content/groups/public/</url>
-        </mirror>
-      </mirrors>
-      <profiles>
-        <profile>
-          <id>nexus</id>
-          <!--Enable snapshots for the built in central repo to direct -->
-          <!--all requests to nexus via the mirror -->
-          <repositories>
-            <repository>
-              <id>central</id>
-              <url>http://central</url>
-              <releases><enabled>true</enabled></releases>
-              <snapshots><enabled>true</enabled></snapshots>
-            </repository>
-          </repositories>
-         <pluginRepositories>
-            <pluginRepository>
-              <id>central</id>
-              <url>http://central</url>
-              <releases><enabled>true</enabled></releases>
-              <snapshots><enabled>true</enabled></snapshots>
-            </pluginRepository>
-          </pluginRepositories>
-        </profile>
-      </profiles>
-      <activeProfiles>
-        <!--make the profile active all the time -->
-        <activeProfile>nexus</activeProfile>
-      </activeProfiles>
-    </settings>
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <name>Nexus Public Mirror</name>
+<!--       <url>http://nexus3-mics-tools.cloudapps.inet.local/repository/maven-public/</url> -->
+      <url>http://gateway.ezmeral.yipintsoigroup.com:10011/repository/maven-public/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+</settings>
