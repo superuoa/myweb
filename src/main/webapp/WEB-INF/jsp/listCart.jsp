@@ -87,7 +87,7 @@ function buildTable(data){
 	<div class="container">
 
 		<div class="starter-template">
-			<h1>Query List</h1>
+			<h1>Query Cart</h1>
 
 			<table class="table table-striped" id="cartTable">
 

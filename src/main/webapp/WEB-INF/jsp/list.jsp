@@ -64,7 +64,7 @@ function addToCart(id){
 	<div class="container">
 
 		<div class="starter-template">
-			<h1>Query List</h1>
+			<h1>Query Catalog</h1>
 
 			<table class="table table-striped">
 
