@@ -27,3 +27,5 @@ spec:
         - containerPort: 80
       dnsPolicy: ClusterFirst
       restartPolicy: Always
+      imagePullSecrets:
+        - name: secret1
