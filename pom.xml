@@ -28,7 +28,7 @@
             <url>https://mirror.openshift.com/nexus/content/groups/public</url>
         </repository>
     </repositories>
-    
+    <!-- 
 	<distributionManagement>
         <repository>
             <id>nexus</id>
@@ -39,7 +39,17 @@
             <url>http://gateway.ezmeral.yipintsoigroup.com:10011/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-    
+     -->
+     <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>http://nexus:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>http://nexus:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
