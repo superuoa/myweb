@@ -39,8 +39,8 @@ public class WelcomeController {
 		ModelAndView mv = new ModelAndView("list");
         
 		RestClient rc = new RestClient();
-		String result = rc.get("http://gateway-service.ball-prod:8080/getProduct");
-		
+		//String result = rc.get("http://gateway-service.ball-prod:8080/getProduct");
+		String result = rc.get("http://gateway:8080/getProduct");
 		List<Product> list = Product.buildJsonToCallsObject(result);
 		
         mv.addObject("list",list);
@@ -53,8 +53,8 @@ public class WelcomeController {
 		ModelAndView mv = new ModelAndView("listCart");
         
 		RestClient rc = new RestClient();
-		String result = rc.get("http://gateway-service.ball-prod:8080/getCart");
-		
+		//String result = rc.get("http://gateway-service.ball-prod:8080/getCart");
+		String result = rc.get("http://gateway:8080/getCart");
 		List<Cart> list = Cart.buildJsonToCallsObject(result);
 		
         mv.addObject("list",list);
@@ -71,7 +71,8 @@ public class WelcomeController {
 		Gson gson = new Gson();
 		
 		RestClient rc = new RestClient();
-		String result = rc.post("http://gateway-service.ball-prod:8080/addToCart",gson.toJson(c));
+		//String result = rc.post("http://gateway-service.ball-prod:8080/addToCart",gson.toJson(c));
+		String result = rc.post("http://gateway:8080/addToCart",gson.toJson(c));
 		
         return result;
 	}
@@ -85,7 +86,8 @@ public class WelcomeController {
 		Gson gson = new Gson();
 		
 		RestClient rc = new RestClient();
-		String result = rc.post("http://gateway-service.ball-prod:8080/deleteItem",gson.toJson(c));
+		//String result = rc.post("http://gateway-service.ball-prod:8080/deleteItem",gson.toJson(c));
+		String result = rc.post("http://gateway:8080/deleteItem",gson.toJson(c));
 		
         return result;
 	}
