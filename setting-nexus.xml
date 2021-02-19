@@ -5,7 +5,7 @@
       <id>nexus</id>
       <name>Nexus Public Mirror</name>
 <!--       <url>http://nexus3-mics-tools.cloudapps.inet.local/repository/maven-public/</url> -->
-      <url>http://nexus:8081/repository/maven-public/</url>
+      <url>http://172.26.8.218:8081/repository/maven-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
