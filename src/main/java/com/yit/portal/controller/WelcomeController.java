@@ -28,13 +28,13 @@ public class WelcomeController {
 	@Value("${welcome.message:test}")
 	private String message = "Hello World";
 
-	@RequestMapping("/dd")
+	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("message", this.message);
-		return "welcome test rollout 15";
+		return "{\"name\":\"Ball\", \"age\":31, \"city\":\"Bangkok\"}";
 	}
 
-	@RequestMapping( value = "/", method = RequestMethod.GET)
+	@RequestMapping( value = "/getProduct", method = RequestMethod.GET)
 	public ModelAndView query(@RequestParam(value="name", required=false) String name) {
 		ModelAndView mv = new ModelAndView("list");
         
