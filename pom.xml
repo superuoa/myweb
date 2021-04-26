@@ -43,11 +43,11 @@
      <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://172.26.8.218:8081/repository/maven-releases/</url>
+            <url>http://nexus.dcocp.ibank.com:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://172.26.8.218:8081/repository/maven-snapshots/</url>
+            <url>http://nexus.dcocp.ibank.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 	<dependencies>
