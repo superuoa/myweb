@@ -36,7 +36,7 @@ public class WelcomeController {
 		
 		Product p = new Product();
 		p.setId(1);
-		p.setDescription("RAM: 4, CPU: Intel Core i7-10750H");
+		p.setDescription("ทดสอบภาษาไทย");
 		p.setInstock(1);
 		p.setName("Notebook DELL");
 		p.setInstock(10);
