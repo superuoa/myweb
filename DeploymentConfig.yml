@@ -19,5 +19,12 @@ spec:
         image: nexus.dcocp.ibank.com/balltest3:{{TAG_IMAGE}}
         ports:
         - containerPort: 8080
+        env:
+          - name: aaa
+            value: bbb
+          - name: ccc
+            value: ddzzddd
+          - name: LANG
+            value: C.UTF8
       imagePullSecrets:
         - name: nexus
