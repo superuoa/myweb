@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: catalog
-        image: nexus.dcocp.ibank.com/balltest3:{{TAG_IMAGE}}
+        image: nexus.ibank.co.th/balltest3:{{TAG_IMAGE}}
         ports:
         - containerPort: 8080
         env:
