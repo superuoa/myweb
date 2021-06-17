@@ -30,7 +30,7 @@ public class WelcomeController {
 	@Value("${welcome.message:test}")
 	private String message = "Hello World";
 
-	@RequestMapping("/")
+	@RequestMapping( value = "/", method = RequestMethod.GET)
 	public List<Product> welcome(Map<String, Object> model) {
 		List<Product> list = new ArrayList<Product>();
 		
@@ -61,7 +61,7 @@ public class WelcomeController {
 		return list;
 	}
 	
-	@GetMapping("/getProduct/{id}")
+	@RequestMapping( value = "/getProduct/{id}", method = RequestMethod.GET)
     public Product getById(@PathVariable int id) {
 		Product p = new Product();
 		p.setId(1);
