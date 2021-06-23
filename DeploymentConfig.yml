@@ -4,19 +4,19 @@ metadata:
   name: balltest3
   namespace: {{PROJECT}}
   labels:
-    app: balltest3
+    app: myweb-api
 spec:
   replicas: 1
   selector:
-      app: balltest3
+      app: myweb-api
   template:
     metadata:
       labels:
-        app: balltest3
+        app: myweb-api
     spec:
       containers:
-      - name: catalog
-        image: nexus.ibank.co.th/balltest3:{{TAG_IMAGE}}
+      - name: myweb-api
+        image: nexus.ibank.co.th/myweb-api:{{TAG_IMAGE}}
         ports:
         - containerPort: 8080
         env:

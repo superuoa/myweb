@@ -5,7 +5,7 @@
     "version": "1.0-SNAPSHOT",
     "title": "Demo"
   },
-  "host": "localhost:8080",
+  "host": "http://balltest3-test-dev.apps.uatocp.ibank.com/",
   "basePath": "/",
   "tags": [
     {
