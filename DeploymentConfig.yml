@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: DeploymentConfig
 metadata:
-  name: balltest3
+  name: myweb-api
   namespace: {{PROJECT}}
   labels:
     app: myweb-api
